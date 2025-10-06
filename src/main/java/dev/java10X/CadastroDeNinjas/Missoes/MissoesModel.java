@@ -3,11 +3,15 @@ package dev.java10X.CadastroDeNinjas.Missoes;
 
 import dev.java10X.CadastroDeNinjas.Ninjas.NinjaModel;
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.util.List;
 
 @Entity // Entity ele transforma uma classe em uma entidade do BD
 @Table(name = "tb_missoes")
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class MissoesModel {
 
     // Variáveis
