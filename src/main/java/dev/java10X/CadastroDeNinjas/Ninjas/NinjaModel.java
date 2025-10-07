@@ -18,13 +18,20 @@ public class NinjaModel {
     // Variaveis
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
 
+    @Column(name = "nome")
     private String nome;
+
 
     @Column(unique = true) // Email tem que ser único, o usuário só pode o mesmo email uma vez.
     private String email;
 
+    @Column(name = "img_url")
+    private String imgURL;
+
+    @Column(name = "idade")
     private int idade;
 
     // Um ninja tem uma única missão
